@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogging Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Blogging Platform</h1>
+      <nav>
+        <a href="#" id="home">Home</a>
+        <a href="#" id="profile" class="hidden">Profile</a>
+        <a href="#" id="login" class="hidden">Login</a>
+        <a href="#" id="logout" class="hidden">Logout</a>
+      </nav>
+    </header>
+    <main>
+      <section id="post-list">
+        <button id="new-post">New Post</button>
+        <div id="posts"></div>
+      </section>
+      <section id="post-editor" class="hidden">
+        <h2>New Post</h2>
+        <form id="post-form">
+          <label for="author">Author:</label>
+          <input type="text" id="author" required />
+          <label for="title">Title:</label>
+          <input type="text" id="title" required />
+          <label for="description">Description:</label>
+          <textarea id="description" required></textarea>
+          <label for="content">Content:</label>
+          <textarea id="content" required></textarea>
+          <label for="tags">Tags:</label>
+          <input type="text" id="tags" placeholder="Comma separated" />
+          <label for="image">Image File:</label>
+          <input type="file" id="image-file" accept="image/*" />
+          <button type="submit">Save Post</button>
+        </form>
+      </section>
+      <section id="profile-section" class="hidden">
+        <h2>User Profile</h2>
+        <p>Name: <span id="user-name"></span></p>
+        <p>Email: <span id="user-email"></span></p>
+        <button id="edit-profile">Edit Profile</button>
+      </section>
+      <section id="profile-editor" class="hidden">
+        <h2>Edit Profile</h2>
+        <form id="profile-form">
+          <label for="profile-name">Name:</label>
+          <input type="text" id="profile-name" required />
+          <label for="profile-email">Email:</label>
+          <input type="email" id="profile-email" required />
+          <button type="submit">Save Profile</button>
+        </form>
+      </section>
+      <section id="auth-section">
+        <div id="login-section">
+          <form id="login-form">
+            <h2>Login</h2>
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required />
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required />
+            <div class="show-password-container">
+              <input type="checkbox" id="login-show-password" />
+              <label for="login-show-password">Show Password</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <a href="#" id="show-signup">Don't have an account? Sign up</a>
+          </form>
+        </div>
+        <div id="signup-section" class="hidden">
+          <form id="signup-form">
+            <h2>Sign Up</h2>
+            <label for="signup-name">Name:</label>
+            <input type="text" id="signup-name" required />
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" required />
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" required />
+            <div class="show-password-container">
+              <input type="checkbox" id="signup-show-password" />
+              <label for="signup-show-password">Show Password</label>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <p>
+              Already have an account? <a href="#" id="show-login">Login</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 Blogging Platform
+        <span class="author">Gurwinder Parhar</span>
+      </p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

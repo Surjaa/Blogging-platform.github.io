@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button.btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #555;
+}
+
+.post {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .author {
+  margin-right: 1em;
+}
+
+/* Show Password Styling */
+.show-password-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.show-password-container input[type="checkbox"] {
+  margin-right: 10px;
+  width: auto;
+}
+
+.show-password-container label {
+  margin: 0;
+}
